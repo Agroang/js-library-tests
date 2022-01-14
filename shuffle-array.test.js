@@ -25,7 +25,7 @@ test('array to not be undefined', () => {
 });
 
 describe('not.arrayContaining', () => {
-  const expected = [1, 2, 3, 4, 5, 6, 7, 8];
+  const expected = shuffle([1, 2, 3, 4, 5, 6, 7, 8]);
 
   it('matches if the actual array does not contain the expected elements', () => {
     expect([1, 3, 10]).toEqual(
