@@ -12,10 +12,17 @@ test('array to be in a different order', () => {
   expect(shuffle([1, 2, 3, 4, 5, 6, 7, 8])).not.toBe([1, 2, 3, 4, 5, 6, 7, 8]);
 });
 
-test('array to be in a different order', () => {
+test('array to be truthy (be defined)', () => {
   expect(shuffle([1, 2, 3, 4, 5, 6, 7, 8])).toBeTruthy();
 });
 
+test('array to not be null', () => {
+  expect(shuffle([1, 2, 3, 4, 5, 6, 7, 8])).not.toBeNull();
+});
+
+test('array to not be undefined', () => {
+  expect(shuffle([1, 2, 3, 4, 5, 6, 7, 8])).not.toBeUndefined();
+});
 
 describe('not.arrayContaining', () => {
   const expected = [1, 2, 3, 4, 5, 6, 7, 8];
