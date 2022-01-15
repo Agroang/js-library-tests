@@ -20,3 +20,5 @@ function flippingMatrix(array) {
   }
   return sum;
 }
+
+module.exports = flippingMatrix
